@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+    The very first application
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+    <title>Hello World</title>
+</head>
+
+<!--  BEGINS: Page style settings -->
+
+<style>
+    html {
+        font-family:Arial,Helvetica,sans-serif;
+        background-color: blue;
+    }
+    
+    img {
+        width: 40%;
+    }
+    
+    p {
+        font-size: 5.0em;
+        padding-top: 10px;
+        text-align: right;
+    }
+</style>
+
+<!--  ENDS: Page style settings -->
+<!--  BEGINS: Content for our application -->
+
+<body class="container text-center">
+
+    <h2>Ice-Cream</h2>
+	
+    <img src="img/icecream.jpg">
+	<p>Ice cream is a sweetened frozen food typically eaten as a snack or dessert.</p>
+	<button id="target" type="button" class="btn">What is ice-cream called in Estonia?</button>
+	<button id="target2"type="button" class="btn btn-primary">What is ice-cream called in Finland?</button>
+
+</body>
+
+<!--  ENDS: Content for our application  -->
+
+
+<!--  BEGINS: Script block  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    $("#target").click(function() {
+        alert("jäätis.");
+    });
+	$("#target2").click(function() {
+        alert("jäätelö.");
+    });
+</script>
+<!--  ENDS: Script block  -->
+
+</html>
